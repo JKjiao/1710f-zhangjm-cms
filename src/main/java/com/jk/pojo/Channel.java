@@ -46,5 +46,5 @@ public class Channel {
 		return "Channel [id=" + id + ", name=" + name + ", description=" + description + ", icon=" + icon + ", sorted="
 				+ sorted + "]";
 	}
-	
+
 }

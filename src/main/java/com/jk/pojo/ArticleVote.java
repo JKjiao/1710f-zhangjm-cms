@@ -35,8 +35,9 @@ public class ArticleVote {
 	}
 	@Override
 	public String toString() {
-		return "ArticleVote [id=" + id + ", article_id=" + article_id + ", user_id=" + user_id + ", option=" + option
+		return "Article_vote [id=" + id + ", article_id=" + article_id + ", user_id=" + user_id + ", option=" + option
 				+ "]";
 	}
+
 	
 }

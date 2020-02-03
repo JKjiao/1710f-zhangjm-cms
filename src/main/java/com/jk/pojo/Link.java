@@ -29,6 +29,7 @@ public class Link {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+	
 	public Date getCreated() {
 		return created;
 	}
@@ -37,7 +38,8 @@ public class Link {
 	}
 	@Override
 	public String toString() {
-		return "Link [id=" + id + ", text=" + text + ", url=" + url + "]";
+		return "Link [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + "]";
 	}
 	
+
 }

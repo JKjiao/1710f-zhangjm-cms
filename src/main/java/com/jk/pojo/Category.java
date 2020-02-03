@@ -7,6 +7,7 @@ public class Category {
 	private String name;
 	/** 频道Id **/
 	private Integer channel_id;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -29,5 +30,6 @@ public class Category {
 	public String toString() {
 		return "Category [id=" + id + ", name=" + name + ", channel_id=" + channel_id + "]";
 	}
+
 	
 }

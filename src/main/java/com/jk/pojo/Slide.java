@@ -1,7 +1,10 @@
 package com.jk.pojo;
 
+/**
+ * @author 86183
+ *
+ */
 public class Slide {
-
 	/**  **/
 	private Integer id;
 	/** 标题 **/
@@ -38,6 +41,6 @@ public class Slide {
 	public String toString() {
 		return "Slide [id=" + id + ", title=" + title + ", picture=" + picture + ", url=" + url + "]";
 	}
-	
+
 	
 }

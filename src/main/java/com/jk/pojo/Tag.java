@@ -1,7 +1,6 @@
 package com.jk.pojo;
 
 public class Tag {
-
 	/**  **/
 	private Integer id;
 	/** 标签名称 **/
@@ -22,6 +21,6 @@ public class Tag {
 	public String toString() {
 		return "Tag [id=" + id + ", tagname=" + tagname + "]";
 	}
-	
+
 	
 }

@@ -31,6 +31,7 @@ public class Collect {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+	
 	public Date getCreated() {
 		return created;
 	}
@@ -45,7 +46,10 @@ public class Collect {
 	}
 	@Override
 	public String toString() {
-		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", user_id=" + user_id + "]";
+		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + ", user_id=" + user_id
+				+ "]";
 	}
+	
+
 	
 }
