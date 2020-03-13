@@ -2,9 +2,15 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jk.dao.CollectDao">
+<mapper namespace="com.zhangjiaming.dao.CollectDao">
 	<select id="select" resultType="Collect">
 		SELECT * FROM cms_collect
+		<where>
+			<if test="user_id != null and user_id != ''">
+				user_id = #{user_id}
+			</if>
+		</where>
+		order by created desc
 	</select>
 	
 	
@@ -29,4 +35,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<delete id="delete">
 		DELETE FROM cms_collect WHERE id in(${ids})
 	</delete>
+	
+	<select id="selectByTitleAndUserId" resultType="Collect">
+		select * from cms_collect where user_id = #{userId} and text = #{title}
+	</select>
 </mapper>

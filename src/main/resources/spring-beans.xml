@@ -12,7 +12,7 @@
 
 
 	<!-- 1、注解扫描器 -->
-	<context:component-scan base-package="com.jk" >
+	<context:component-scan base-package="com.zhangjiaming" >
 		<!-- 排除要要扫描的controller -->
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
@@ -74,7 +74,7 @@
 	 <aop:config>
 		<!-- 配置切点表达式 -->
 		<aop:pointcut           
-			expression="execution(* com.jk.service.*.*(..))" id="pointcut" />
+			expression="execution(* com.zhangjiaming.service.*.*(..))" id="pointcut" />
 		<!-- 关联事务 -->
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" />
 
@@ -84,7 +84,13 @@
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- basePackage :mapper接口所在的包 -->
-		<property name="basePackage" value="com.jk.dao"></property>
+		<property name="basePackage" value="com.zhangjiaming.dao"></property>
 
 	</bean>
+	
+	<!--9 其它配置 -->
+	<import resource="redis.xml"/>
+	<import resource="kafka-producer.xml"/>
+	<import resource="kafka-consumer.xml"/>
+	<import resource="elasticsearch.xml"/>
 </beans>

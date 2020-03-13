@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.jk.dao.UserDao;
-import com.jk.pojo.User;
+import com.zhangjiaming.dao.UserDao;
+import com.zhangjiaming.pojo.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring-beans.xml")
